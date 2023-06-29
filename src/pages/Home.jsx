@@ -3,12 +3,16 @@ import "../styles/home.css";
 import Subtitle from "./../shared/Subtitle";
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
+import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
+import MasonryImagesGallery from "../components/Img-gallery/MasonryImagesGallery";
 
 import { Container, Row, Col } from "reactstrap";
+
 import IMG1 from "../assets/images/hero-img01.jpg";
 import IMG2 from "../assets/images/hero-img02.jpg";
 import IMG3 from "../assets/images/world.png";
 import VID from "../assets/images/hero-video.mp4";
+import IMG4 from "../assets/images/experience.png";
 
 const Home = () => {
   return (
@@ -72,9 +76,70 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg='12' className="featured__tour">
-              <Subtitle subtitle={"Khám phá"}/>
-              <h2 className="featured__tour-title">Tham quan những dịch vụ của chúng tôi</h2>
+            <Col lg="12" className="featured__tour">
+              <Subtitle subtitle={"Khám phá"} />
+              <h2 className="featured__tour-title">
+                Tham quan những dịch vụ của chúng tôi
+              </h2>
+            </Col>
+            <FeaturedTourList />
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="experience__content">
+                <Subtitle subtitle={"Kinh nghiệm"} />
+
+                <h2>
+                  Với tất cả kinh nghiệm <br /> chúng tôi sẽ phục vụ bạn tận
+                  tình
+                </h2>
+                <p>
+                  Tạo cho bạn những cảm giác tuyệt vời nhất.
+                  <br />
+                  Hãy tận hưởng khi trải nghiệm dịch vụ của chúng tôi.
+                </p>
+              </div>
+
+              <div className="counter__wrapper">
+                <div className="counter__box">
+                  <span>12k+</span>
+                  <h6>Chuyến du lịch</h6>
+                </div>
+                <div className="counter__box">
+                  <span>2k+</span>
+                  <h6>Thường xuyên</h6>
+                </div>
+                <div className="counter__box">
+                  <span>16</span>
+                  <h6>Năm kinh nghiệm</h6>
+                </div>
+              </div>
+            </Col>
+            <Col lg="6">
+              <div className="experience__img">
+                <img src={IMG4} alt="" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Giới thiệu"} />
+              <h2 className="gallery__title">
+                Hãy ghé thăm những hình ảnh của những khách hàng đã trải nghiệm
+              </h2>
+            </Col>
+            <Col lg="12">
+              <MasonryImagesGallery/>
             </Col>
           </Row>
         </Container>
