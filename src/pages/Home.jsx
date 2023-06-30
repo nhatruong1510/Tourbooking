@@ -5,6 +5,8 @@ import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 import MasonryImagesGallery from "../components/Img-gallery/MasonryImagesGallery";
+import Testimonials from "../components/Testimonial/Testimonials";
+import Newsletter from "../shared/Newsletter";
 
 import { Container, Row, Col } from "reactstrap";
 
@@ -13,6 +15,7 @@ import IMG2 from "../assets/images/hero-img02.jpg";
 import IMG3 from "../assets/images/world.png";
 import VID from "../assets/images/hero-video.mp4";
 import IMG4 from "../assets/images/experience.png";
+
 
 const Home = () => {
   return (
@@ -144,6 +147,21 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={'Đánh giá'}/>
+              <h2 className="testimonials__title">Khách hàng đánh giá về chúng tôi</h2>
+            </Col>
+            <Col lg="12">
+              <Testimonials/>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <Newsletter/>
     </>
   );
 };
