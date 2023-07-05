@@ -32,7 +32,7 @@ const TourCard = ({ tour }) => {
           </div>
 
           <h5 className="tour__title">
-            <Link to={`/tours${id}`}>{title}</Link>
+            <Link to={`/tours/${id}`}>{title}</Link>
           </h5>
 
           <div className="card__bottom">
@@ -40,7 +40,7 @@ const TourCard = ({ tour }) => {
               ${price} <span> / người</span>
             </h5>
             <button className="btn booking__btn">
-              <Link to={`/tours${id}`}>Đặt ngay</Link>
+              <Link to={`/tours/${id}`}>Đặt ngay</Link>
             </button>
           </div>
         </CardBody>

@@ -1,0 +1,36 @@
+.tour {
+    padding-top: 0;
+}
+
+.tour__card {
+    margin-bottom: 1rem;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+
+}
+
+.pagination span {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.3rem;
+    border-radius: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--secondary-color);
+    color: var(--heading-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.active__page {
+    background: var(--secondary-color);
+    color: var(--color-white) !important;
+}
